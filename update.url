@@ -1,0 +1,1 @@
+http://localhost:8080/PurchaseOrderApi/api/order/update/2?price=24.5&quantity=4&discount=10%25&origin=SAP&description=Drink%20all%20the%20time%20coffee

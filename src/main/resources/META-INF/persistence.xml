@@ -1,0 +1,29 @@
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="orders">
+    <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+    <jta-data-source>jdbc/testdb</jta-data-source>
+    <non-jta-data-source>jdbc/testdb-unmanaged</non-jta-data-source>
+    <class>ocp.service.po.model.PurchaseOrder</class>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.create-source" value="script"/>
+      <property name="javax.persistence.schema-generation.create-script-source" value="META-INF/sql/create_po_table.ddl"/>
+      <property name="javax.persistence.sql-load-script-source" value="META-INF/sql/data.sql"/>
+      <property name="javax.persistence.schema-generation.drop-source" value="script"/>
+      <property name="javax.persistence.schema-generation.drop-script-source" value="META-INF/sql/drop_po_table.ddl"/>
+
+	<!--
+      <property name="tomee.jpa.factory.lazy" value="true" />
+      <property name="tomee.jpa.cdi" value="false" />
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+	-->
+    </properties>
+  </persistence-unit>
+</persistence>
