@@ -1,7 +1,7 @@
 <resources>
   <Resource id="jdbc/testdb" type="javax.sql.DataSource">
     JdbcDriver = com.mysql.jdbc.Driver
-    JdbcUrl = jdbc:mysql://MYSQL_SERVICE_HOST:MYSQL_SERVICE_PORT/testdb
+    JdbcUrl = jdbc:mysql://${MYSQL_SERVICE_HOST}:${MYSQL_SERVICE_PORT}/testdb
     UserName = admin
     Password = password
     JtaManaged = true
@@ -9,7 +9,7 @@
 
   <Resource id="jdbc/testdb-unmanaged" type="javax.sql.DataSource">
     JdbcDriver = com.mysql.jdbc.Driver
-    JdbcUrl = jdbc:mysql://MYSQL_SERVICE_HOST:MYSQL_SERVICE_PORT/testdb
+    JdbcUrl = jdbc:mysql://${MYSQL_SERVICE_HOST}:${MYSQL_SERVICE_PORT}/testdb
     UserName = admin
     Password = password
     JtaManaged = false
