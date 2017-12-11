@@ -30,7 +30,7 @@ Use the DDL and SQL scripts provided in the [sql](https://github.com/ganrad/ocp-
 
 3. Allow the application build to finish and the application Pod to come up (start).
 
-### D] Finally, test the microservice by using either **CURL** command in a terminal window or by using a REST client (Browser Plugin).
+### D] Test the microservice by using either **CURL** command in a terminal window or by using a REST client (Browser Plugin).
 
 This *po-service* microservice/application supports all CRUD operations on purchase orders. The REST API exposed by this microservice can be accessed via the following context path URI's based on the build type used to build this application.
 - For *Maven* build, the context path is - /PurchaseOrderAPI/api/
@@ -49,4 +49,4 @@ You can access the Purchase Order REST API from your web browser as follows.
 * http://<hostname_route_url>/PurchaseOrderAPI/api/order/list
 * http://<hostname_route_url>/PurchaseOrderAPI/api/order/1
 
-Congrats!  You have just built a simple JEE7 JAX-RS microservice/API using Maven/Gradle, deployed the application binary on Apache TomEE Plus 7.0.4 application server and finally deployed a containerized microservice containing both the purchase order application and the Tomcat application runtime on OpenShift CP.
+Congrats!  You have just built a simple JEE7 JAX-RS microservice/API using Maven/Gradle, deployed the application binary on Apache TomEE Plus 7.0.4 application server and finally deployed a containerized microservice containing both this purchase order application and the Tomcat application server on OpenShift CP.
