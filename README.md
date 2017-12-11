@@ -30,7 +30,7 @@ Use the DDL and SQL scripts provided in the [sql](https://github.com/ganrad/ocp-
 
 3. Allow the application build to finish and the application Pod to come up (start).
 
-Finally, test the microservice by either using **CURL** in a terminal window or by using a REST client (Browser Plugin).
+### D] Finally, test the microservice by using either **CURL** command in a terminal window or by using a REST client (Browser Plugin).
 
 This *po-service* microservice/application supports all CRUD operations on purchase orders. The REST API exposed by this microservice can be accessed via the following context path URI's based on the build type used to build this application.
 - For *Maven* build, the context path is - /PurchaseOrderAPI/api/
